@@ -8,20 +8,58 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    background: url('../images/gradient-7258997_1280.webp') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #333;
 }
 
+  /* Header Navigation */
+header {
+    background: rgba(246, 187, 255, 0.809);
+    padding: 15px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #a5d9ff;
+  }
+  
 /* Resume Container */
 .resume-container {
+    width: 80%;
+    max-width: 900px;
     display: flex;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Left Column */
 .left-column {
@@ -44,13 +82,18 @@ body {
 
 .job-title {
     font-size: 16px;
-    color: #555;
+    color: #ff6f91;
 }
 
 .contact-section,
 .education-section,
 .skills-section {
     margin-top: 20px;
+}
+
+/* Contact Section Links */
+.contact-section a {
+    color: #ff6f91; 
 }
 
 .skills-section ul {
