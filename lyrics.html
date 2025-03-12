@@ -3,39 +3,59 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/webp" href="images/funny-cat.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Lyrics</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset.css">
-  </head>
-
-  <body>
+</head>
+<body>
+    <!-- Header Navigation -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="lyrics.html">Song Lyrics</a></li>
-          <li><a href="interests.html">My Interests</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="lyrics.html">Song Lyrics</a></li>
+                <li><a href="interests.html">My Interests</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-      <h1>I'll keep you safe</h1>
-      <h4>Song By Shiloh</h4>
-      <p><a href="https://www.youtube.com/watch?v=KCZqguEKdBc">Original Video</a></p>  
-      <a href="https://www.youtube.com/watch?v=KCZqguEKdBc" target="_blank">
-        <img src="images/shiloh.jpg" alt="Shiloh">
-      </a>
-    </section>
+    <!-- Lyrics Container -->
+    <section class="lyrics-container">
+        <h1>I'll Keep You Safe</h1>
+        <h4>Song By Shiloh</h4>
+        <p><a href="https://www.youtube.com/watch?v=KCZqguEKdBc" target="_blank">Original Video</a></p>
 
-    <section>
-      <pre>
-        I'll keep you safe
-        in these arms of mine
-        Hold onto me pretty
-        baby you will see
-        I can be all you need
-      </pre>
+        <!-- Song Content -->
+        <div class="song-content">
+            <!-- Image -->
+            <div class="song-image">
+                <img src="images/shiloh.jpg" alt="Shiloh">
+            </div>
+
+            <!-- Audio Player -->
+            <div class="audio-player">
+                <div class="player-controls">
+                    <span>0:24</span>
+                    <input type="range" min="0" max="185" value="24" class="progress-bar">
+                    <span>3:05</span>
+                </div>
+                <div class="controls">
+                    ↻ ◁ II ▷ ↺
+                </div>
+            </div>
+
+            <!-- Lyrics -->
+            <div class="song-lyrics">
+                <pre>
+                    I'll keep you safe
+                    in these arms of mine
+                    Hold onto me pretty
+                    baby you will see
+                    I can be all you need
+                </pre>
+            </div>
+        </div>
     </section>
-  </body>
+</body>
 </html>

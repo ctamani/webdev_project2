@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 /* General Styles */
 body {
@@ -17,49 +17,57 @@ body {
     color: #333;
 }
 
-  /* Header Navigation */
+/* Header Navigation */
 header {
-    background: rgba(246, 187, 255, 0.809);
+    background: rgba(246, 187, 255, 0.809); /* Light purple background */
     padding: 15px 0;
     width: 100%;
+    position: fixed; /* Fixed at the top */
     top: 0;
     left: 0;
-    z-index: 1000;
-}
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #a5d9ff;
-  }
-  
-/* Resume Container */
-.resume-container {
-    width: 80%;
-    max-width: 900px;
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color:rgba(255, 255, 255, 0.7);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
+nav ul {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between links */
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for links */
+    padding: 10px 15px; /* Add padding around links */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #a5d9ff; /* Light blue hover effect */
+}
+
+/* Resume and Interests Containers */
+.resume-container, .interests-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.resume-container {
+    display: flex;
+    margin: 100px auto 20px;
+}
+
+.interests-container {
+    margin-top: 100px; /* Add spacing below the header */
+}
 
 /* Left Column */
 .left-column {
@@ -85,13 +93,10 @@ header {
     color: #ff6f91;
 }
 
-.contact-section,
-.education-section,
-.skills-section {
+.contact-section, .education-section, .skills-section {
     margin-top: 20px;
 }
 
-/* Contact Section Links */
 .contact-section a {
     color: #ff6f91; 
 }
@@ -117,9 +122,7 @@ header {
     padding-bottom: 10px;
 }
 
-.summary-section p,
-.experience-item ul,
-.project-item ul {
+.summary-section p, .experience-item ul, .project-item ul {
     line-height: 1.9em;
 }
 
@@ -139,3 +142,85 @@ header {
 .projects-section .project-item h3 {
     font-size: 18px;
 }
+
+/* Interest Page Sections */
+.interest-section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.interest-section h2 {
+    font-size: 22px;
+    color: #6a1b9a; /* Purple accent for headings */
+}
+
+.interest-section img {
+    width: 60%; 
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    margin: 0 auto; /* Center the image */
+}
+
+.interest-section video {
+    width: 60%; /* Adjust video size to 80% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for videos */
+    margin: 0 auto; /* Center the video */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Lyrics Container */
+.lyrics-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto; /* Add spacing below the header */
+    padding: 20px;
+    background-color: rgba(221, 174, 255, 0.669); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Song Content Layout */
+.song-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center all items horizontally */
+}
+
+.song-image img {
+    width: 150px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Audio Player Design */
+.audio-player {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-controls {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    font-size: 24px;
+    color: #6a1b9a; /* Purple accent for controls */
+}
+
+
