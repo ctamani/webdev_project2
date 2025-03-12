@@ -190,6 +190,9 @@ nav ul li a:hover {
     background-color: rgba(221, 174, 255, 0.669); /* Semi-transparent white background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack all elements vertically */
+    align-items: center; /* Center all elements horizontally */
 }
 
 /* Song Content Layout */
@@ -200,9 +203,9 @@ nav ul li a:hover {
 }
 
 .song-image img {
-    width: 150px; /* Adjust image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for images */
+    width: 150px;
+    height: auto; 
+    border-radius: 10px; 
 }
 
 /* Audio Player Design */
@@ -221,6 +224,17 @@ nav ul li a:hover {
 .controls {
     font-size: 24px;
     color: #6a1b9a; /* Purple accent for controls */
+}
+
+/* Lyrics Styling */
+.song-lyrics {
+    margin-top: 20px; /* Add spacing above the lyrics */
+    text-align: left; /* Center-align lyrics text */
+}
+
+.song-lyrics pre {
+    font-family: 'Courier New', monospace; /* Monospace font for lyrics */
+    font-size: 16px;
 }
 
 
