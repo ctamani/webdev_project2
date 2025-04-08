@@ -17,7 +17,7 @@
   
   /* General Styles */
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
     background: url('../images/gradient-7258997_1280.webp') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
@@ -230,13 +230,9 @@
     margin-top: 100px; /* Add spacing below the header */
   }
   
-  .interest-section {
-    margin-bottom: 30px; /* Space between sections */
-  }
-  
   /* Heading Styling */
   .interests-container h1 {
-    font-family: 'SunFlower', sans-serif;
+    font-family: 'SunFlower', 'Arial';
     text-align: center;
     font-size: 55px;
     color: #ff8df7;
@@ -256,6 +252,10 @@
     margin-bottom: 20px; /* Add spacing below the paragraph */
   }
   
+  .interest-section {
+    margin-bottom: 30px; /* Space between sections */
+  }
+
   /* Paragraph Styling */
   .interest-section p {
     text-align: center;
@@ -323,7 +323,7 @@
   }
   
   @font-face {
-    font-family: "SunFlower"; /* Choose a name for the font */
+    font-family: "SunFlower"; 
     src: url("../fonts/Sun\ Flower.otf") format("woff2"), 
          url("../fonts/Sun\ Flower.ttf") format("truetype");
     font-weight: normal;
